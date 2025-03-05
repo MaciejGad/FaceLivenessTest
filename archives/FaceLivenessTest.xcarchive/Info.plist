@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/FaceLivenessTest.app</string>
+		<key>Architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>CFBundleIdentifier</key>
+		<string>pl.maciejgad.FaceLivenessTest</string>
+		<key>CFBundleShortVersionString</key>
+		<string>1.0</string>
+		<key>CFBundleVersion</key>
+		<string>2</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: Maciej Gad (S6PA64TSAY)</string>
+		<key>Team</key>
+		<string>ZKL6C9T3NC</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2025-03-05T11:07:57Z</date>
+	<key>Name</key>
+	<string>FaceLivenessTest</string>
+	<key>SchemeName</key>
+	<string>FaceLivenessTest</string>
+</dict>
+</plist>
