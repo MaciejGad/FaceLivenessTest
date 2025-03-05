@@ -54,7 +54,7 @@ shell("git checkout -B \(branch)")
 shell("mkdir -p docs")
 shell("mv \(ipaPath) \(plistPath) \(otaHTMLPath) \(qrPath) docs/")
 
-shell("git add docs/\(ipaName) docs/manifest.plist docs/index.html docs/qr.png")
+shell("git add -f docs/\(ipaName) docs/manifest.plist docs/index.html docs/qr.png")
 shell("git commit -m \"🚀 Deploy OTA build \(Date())\"")
 shell("git push -f origin \(branch)")
 
