@@ -1,9 +1,4 @@
-//
-//  Untitled.swift
-//  FaceLivenessTest
-//
-//  Created by bazyl on 04/03/2025.
-//
+import Foundation
 
 struct LivenessResult: Codable {
     let status: Status
