@@ -4,6 +4,7 @@ import Foundation
 
 let branch = "gh-pages"
 let exportPath = "../build"
+let docsPath = "../docs"
 let projectName = "FaceLivenessTest"
 let ipaName = "\(projectName).ipa"
 let ipaPath = "\(exportPath)/\(ipaName)"
@@ -51,10 +52,10 @@ print(shell("swift build_ota.swift \(githubPagesURL)"))
 
 print("🚀 Deploying to GitHub Pages...")
 shell("git checkout -B \(branch)")
-shell("mkdir -p docs")
-shell("mv \(ipaPath) \(plistPath) \(otaHTMLPath) \(qrPath) docs/")
+shell("mkdir -p \(docsPath)")
+shell("mv \(ipaPath) \(plistPath) \(otaHTMLPath) \(qrPath) \(docsPath)/")
 
-shell("git add -f docs/\(ipaName) docs/manifest.plist docs/index.html docs/qr.png")
+shell("git add -f \(docsPath)/\(ipaName) \(docsPath)/manifest.plist \(docsPath)/index.html \(docsPath)/qr.png")
 shell("git commit -m \"🚀 Deploy OTA build \(Date())\"")
 shell("git push -f origin \(branch)")
 
